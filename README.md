@@ -7,6 +7,7 @@
 このリポジトリには以下のデータファイルが含まれています。
 
 - JapanMountain.json
+- JapanMountain.meta.json
 - JapanMountain.csv
 
 ## License
@@ -17,15 +18,14 @@
 参考: [国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)
 
 
-## Json
+## Json (JapanMountain.json)
 
 ### header
 
-version: json データのバージョン
+version: json データのバージョン (後述のメンテナンス方針を参照)
+updatedAt: 更新日付
 
-後述のメンテナンス方針を参照
-
-### data 配列
+### data (配列)
 
 - name: 主な名称
 - kana: 主な名称の読み仮名
@@ -39,6 +39,10 @@ version: json データのバージョン
 - gisMapUrl: 国土地理院地図への URL
 - cordillera?: 山系が提供されている場合は設定される
 - shortname?: 主な名称の他に短い名前が提供されている場合は設定される
+
+## Json (JapanMountain.meta.json)
+
+JapanMountain.json ファイルのうちデータの本体を除いて軽量化したもの。
 
 ## CSV
 
@@ -72,4 +76,5 @@ Json ファイルから一部の平坦にできるデータのみを出力した
 - Upstream の軽微な修正も反映した後で Revision を up します。
 - データ形式に小さな変更(フィールド追加など)があった場合に Minor 番号を up します。
 - データ形式に大きな変更(データ構造の変更、フィールド削除)があった場合は Major 番号を up します。
-- Upstream のデータ構造に変更があった場合もフィールド互換性はできるだけ維持する。
+- Upstream のデータ構造に変更があった場合もフィールド互換性はできるだけ維持します。
+- Major 番号の up はできるだけ回避しますが、Upstream の構造に大きな変更があった場合はこの限りではありません。
