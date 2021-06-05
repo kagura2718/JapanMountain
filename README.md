@@ -22,8 +22,8 @@
 
 ### header
 
-version: json データのバージョン (後述のメンテナンス方針を参照)
-updatedAt: 更新日付
+- version: json データのバージョン (後述のメンテナンス方針を参照)
+- updatedAt: 更新日付
 
 ### data (配列)
 
@@ -35,8 +35,11 @@ updatedAt: 更新日付
 - altitude: 標高
 - area: 山地、島名など大まかな地域
 - prefectures: 都道府県の配列
-- triangulationStationName: 三角点名
 - gisMapUrl: 国土地理院地図への URL
+- triangulationStationName?: 三角点名
+- isElevationPoint?: 
+- triangulationStationName?:
+- note?: 
 - cordillera?: 山系が提供されている場合は設定される
 - shortname?: 主な名称の他に短い名前が提供されている場合は設定される
 
