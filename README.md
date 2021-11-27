@@ -2,13 +2,7 @@
 
 [日本の主な山岳一覧(国土地理院ウェブサイト)](https://www.gsi.go.jp/kihonjohochousa/kihonjohochousa41140.html)
 
-上記の URL 内の table では日本国内の多くの山を網羅しているようなので、これを json としてデータ起こししました。何かの役に立つかもしれないので、このまま公開しておきます。
-
-このリポジトリには以下のデータファイルが含まれています。
-
-- JapanMountain.json
-- JapanMountain.meta.json
-- JapanMountain.csv
+上記の URL 内の table では日本国内の多くの山を網羅しているようなので、これを json としてデータ起こしした。何かの役に立つかもしれないので、このまま公開する。
 
 ## License
 
@@ -17,6 +11,14 @@
 
 参考: [国土地理院コンテンツ利用規約](https://www.gsi.go.jp/kikakuchousei/kikakuchousei40182.html)
 
+
+## Files
+
+このリポジトリには以下のデータファイルが含まれている。
+
+- JapanMountain.json
+- JapanMountain.meta.json
+- JapanMountain.csv
 
 ## Json (JapanMountain.json)
 
@@ -38,7 +40,6 @@
 - gisMapUrl: 国土地理院地図への URL
 - triangulationStationName?: 三角点名
 - isElevationPoint?: 
-- triangulationStationName?:
 - note?: 
 - cordillera?: 山系が提供されている場合は設定される
 - shortname?: 主な名称の他に短い名前が提供されている場合は設定される
@@ -73,11 +74,11 @@ Json ファイルから一部の平坦にできるデータのみを出力した
 
 ### Version
 
-一通りデータやデータ構造の検証が終わった後で 1.0.0 として公開します。
+一通りデータやデータ構造の検証が終わった後で 1.0.0 として公開する。
 
-- 軽微なデータの修正をした場合は Revision 番号を up します。
-- Upstream の軽微な修正も反映した後で Revision を up します。
-- データ形式に小さな変更(フィールド追加など)があった場合に Minor 番号を up します。
-- データ形式に大きな変更(データ構造の変更、フィールド削除)があった場合は Major 番号を up します。
-- Upstream のデータ構造に変更があった場合もフィールド互換性はできるだけ維持します。
-- Major 番号の up はできるだけ回避しますが、Upstream の構造に大きな変更があった場合はこの限りではありません。
+- 軽微なデータの修正をした場合は Revision 番号を up する。
+- Upstream の軽微な修正も反映した後で Revision を up する。
+- データ形式に小さな変更(フィールド追加など)があった場合に Minor 番号を up する。
+- データ形式に大きな変更(データ構造の変更、フィールド削除)があった場合は Major 番号を up する。
+- Upstream のデータ構造に変更があった場合もフィールド互換性はできるだけ維持する。
+- Major 番号の up はできるだけ回避しますが、Upstream の構造に大きな変更があった場合はこの限りではない。
